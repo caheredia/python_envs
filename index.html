@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Venv</title>
+  <meta charset="utf-8">
+  <style>
+    @import url(https://fonts.googleapis.com/css2?family=Montserrat);
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,400italic);
+    @import url(https://fonts.googleapis.com/css?family=JetBrains+Mono:400,700,400italic);
+
+    body {
+      font-family: 'Roboto';
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Montserrat';
+      font-weight: normal;
+    }
+
+    .remark-code,
+    .remark-inline-code {
+      font-family: 'JetBrains Mono';
+    }
+
+    .column-2 {
+      column-count: 2;
+      column-gap: 3em;
+      column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .column-3 {
+      column-count: 3;
+      column-gap: 3em;
+      column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+  <script>
+    var slideshow = remark.create({
+      sourceUrl: 'index.md',
+      countIncrementalSlides: false,
+      highlightSpans: false,
+      slideNumberFormat: '%current%',
+      highlightLines: true,
+    });
+  </script>
+</body>
+
+</html>
